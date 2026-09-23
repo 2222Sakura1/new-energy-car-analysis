@@ -34,20 +34,30 @@ st.set_page_config(page_title='新能源汽车数据分析平台', page_icon='�
 # ===================== 自定义样式 =====================
 st.markdown("""
 <style>
+.stApp {background:#0D1117;}
 .block-container {padding-top: 1.6rem; padding-bottom: 3rem;}
 .banner {background: linear-gradient(120deg,#0E9F8C 0%,#14B8A6 55%,#2C7FB8 100%);
   padding: 30px 38px; border-radius: 16px; color:#fff; margin-bottom: 24px;
   box-shadow: 0 8px 22px rgba(14,159,140,.28);}
-.banner h1 {margin:0; font-size:30px; font-weight:800; letter-spacing:.5px;}
-.banner p {margin:10px 0 0; font-size:14px; opacity:.94;}
-[data-testid="stMetric"] {background:#fff; border:1px solid #E6EFED; border-radius:12px;
-  padding:14px 18px; box-shadow:0 2px 10px rgba(0,0,0,.05);}
-[data-testid="stMetricValue"] {color:#0E7C6E; font-weight:800;}
-section[data-testid="stSidebar"] {background:#F0F5F4;}
-.concl {background:#F0F9F7; border-left:4px solid #14B8A6; padding:12px 18px;
-  border-radius:0 10px 10px 0; font-size:14.5px; margin-top:10px; line-height:1.7;}
-h1,h2,h3 {color:#16323A;}
-.stTabs [data-baseweb="tab"] {font-weight:600; font-size:14px;}
+.banner h1 {margin:0; font-size:30px; font-weight:800; letter-spacing:.5px; color:#fff !important;}
+.banner p {margin:10px 0 0; font-size:14px; opacity:.94; color:#fff !important;}
+[data-testid="stMetric"] {background:#161B22; border:1px solid #21262D; border-radius:12px;
+  padding:14px 18px; box-shadow:0 2px 10px rgba(0,0,0,.3);}
+[data-testid="stMetricValue"] {color:#2DD4BF; font-weight:800;}
+[data-testid="stMetricLabel"] p {color:#9BA8B3;}
+[data-testid="stMetricDelta"] svg, [data-testid="stMetricDelta"] {color:#7EE8D8;}
+section[data-testid="stSidebar"] {background:#161B22; border-right:1px solid #21262D;}
+section[data-testid="stSidebar"] h3 {color:#E6EDF3 !important;}
+section[data-testid="stSidebar"] label, section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] {color:#C2CCD6 !important;}
+section[data-testid="stSidebar"] hr {border-color:#21262D;}
+.concl {background:#11211F; border-left:4px solid #14B8A6; padding:12px 18px;
+  border-radius:0 10px 10px 0; font-size:14.5px; margin-top:10px; line-height:1.7; color:#C9D6D2;}
+h1,h2,h3 {color:#E6EDF3 !important;}
+.stTabs [data-baseweb="tab"] {font-weight:600; font-size:14px; color:#9BA8B3;}
+.stTabs [aria-selected="true"] {color:#2DD4BF !important;}
+.stTabs [data-baseweb="tab-highlight"] {background-color:#2DD4BF;}
+[data-testid="stDataFrame"] {border:1px solid #21262D; border-radius:8px; overflow:hidden;}
 </style>
 """, unsafe_allow_html=True)
 
